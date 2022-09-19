@@ -30,7 +30,7 @@ int main()
     }
     else
     {
-        cout << "Something else" << endl;
+        cout << "Something different" << endl;
     }
     */
 
