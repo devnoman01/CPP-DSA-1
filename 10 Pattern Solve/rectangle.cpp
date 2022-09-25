@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int row, col;
+    cout << "Enter row and column no: " << endl;
+    cin >> row >> col;
+
+    for (int i = 1; i < row; i++)
+    {
+        for (int j = 0; j < col; j++)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+
+    cout << "Hello World" << endl;
+
+    return 0;
+}
