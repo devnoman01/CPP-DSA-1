@@ -3,23 +3,23 @@ using namespace std;
 
 int main()
 {
-    int n, i, j;
+    int n;
     cout << "Enter row no: ";
     cin >> n;
 
-    for (i = 1; i <= n; i++)
+    for (int i = 1; i <= n; i++)
     {
-        for (j = n; j > i; j--)
+        for (int j = n; j > i; j--)
         {
             cout << "  ";
         }
-        for (j = i; j >= 1; j--)
+        for (int k = i; k >= 1; k--)
         {
-            cout << j << " ";
+            cout << k << " ";
         }
-        for (j = 2; j <= i; j++)
+        for (int l = 2; l <= i; l++)
         {
-            cout << j << " ";
+            cout << l << " ";
         }
 
         cout << endl;
