@@ -19,11 +19,11 @@ int main()
 
     if (num == sum)
     {
-        cout << "Armstrong number" << endl;
+        cout << "Armstrong number";
     }
     else
     {
-        cout << "Not armstrong number" << endl;
+        cout << "Not armstrong number";
     }
 
     return 0;
