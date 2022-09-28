@@ -12,8 +12,8 @@ int main()
 
     while (n > 0)
     {
-        int lastdigit = n % 10;
-        reverse = (reverse * 10) + lastdigit;
+        int digit = n % 10;
+        reverse = (reverse * 10) + digit;
         n = n / 10;
     }
 
