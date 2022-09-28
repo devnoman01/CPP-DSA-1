@@ -12,7 +12,7 @@ int main()
     {
         if (n % i == 0)
         {
-            cout << "Not prime number";
+            cout << "Not prime number" << endl;
             flag = 1;
             break;
         }
@@ -20,7 +20,7 @@ int main()
 
     if (flag == 0)
     {
-        cout << "Prime number";
+        cout << "Prime number" << endl;
     }
 
     return 0;
