@@ -2,12 +2,8 @@
 #include <math.h>
 using namespace std;
 
-int main()
+int convert(int n)
 {
-    int n;
-    cout << "Octal value: ";
-    cin >> n;
-
     int i = 0, ans = 0;
 
     while (n != 0)
@@ -17,8 +13,16 @@ int main()
         n /= 10;
         i++;
     }
+    return ans;
+}
 
-    cout << "Decimal value: " << ans;
+int main()
+{
+    int n;
+    cout << "Octal value: ";
+    cin >> n;
+
+    cout << "Decimal value: " << convert(n);
 
     return 0;
 }
