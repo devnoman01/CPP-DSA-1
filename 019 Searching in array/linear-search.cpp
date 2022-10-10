@@ -1,16 +1,16 @@
 #include <iostream>
 using namespace std;
 
-bool search(int arr[], int size, int key)
+int search(int arr[], int size, int key)
 {
     for (int i = 0; i < size; i++)
     {
         if (arr[i] == key)
         {
-            return true;
+            return i;
         }
     }
-    return false;
+    return -1;
 }
 
 int main()
@@ -30,15 +30,15 @@ int main()
     cout << "Search value: ";
     cin >> key;
 
-    bool found = search(arr, n, key);
+    int found = search(arr, n, key);
 
-    if (found)
+    if (found == -1)
     {
-        cout << "Key is present" << endl;
+        cout << "Key is absent" << endl;
     }
     else
     {
-        cout << "Key is absent" << endl;
+        cout << "Key is present at position " << found << endl;
     }
 
     return 0;
