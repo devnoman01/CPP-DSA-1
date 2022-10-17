@@ -22,8 +22,7 @@ int main()
         cout << "1" << endl;
     }
 
-    int ans = 0;
-    int mx = -1;
+    int ans = 0, mx = -1;
 
     for (int i = 0; i < n; i++)
     {
