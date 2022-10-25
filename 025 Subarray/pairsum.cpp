@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-bool pairsum(int arr[], int n, int k)
+void pairsum(int arr[], int n, int k)
 {
     for (int i = 0; i < n - 1; i++)
     {
@@ -10,12 +10,14 @@ bool pairsum(int arr[], int n, int k)
         {
             if (arr[i] + arr[j] == k)
             {
+                cout << "Pair sum matched." << endl;
                 cout << arr[i] << "+" << arr[j] << "=" << k;
-                return true;
+                return;
             }
         }
     }
-    return false;
+    cout << "Pair sum don't match." << endl;
+    return;
 }
 
 int main()
@@ -34,7 +36,7 @@ int main()
     cout << "Enter sum value: ";
     cin >> k;
 
-    cout << pairsum(arr, n, k) << endl;
+    pairsum(arr, n, k);
 
     return 0;
 }
