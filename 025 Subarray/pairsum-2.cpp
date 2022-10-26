@@ -30,7 +30,6 @@ void pairsum(int arr[], int n, int k)
 int main()
 {
     int n = 8, k = 31;
-
     int arr[] = {2, 4, 7, 11, 14, 16, 20, 21};
 
     pairsum(arr, n, k);
